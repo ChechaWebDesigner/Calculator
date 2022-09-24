@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./Normalize/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/theme-1.css">
+    <link rel="stylesheet" href="./styles/theme-2.css">
+    <link rel="stylesheet" href="./styles/theme-3.css">
+</head>
+
+<body class="initial-mode">
+
+    <main>
+        <div class="container-mini">
+            <div class="col-4" id="title">
+                calc
+            </div>
+
+            <div class="col-8 container-flex">
+
+                <div class="containerTheme">
+                    THEME
+                </div>
+
+                <div class="containerBtn">
+                    <div class="container-options">
+                        <span>1</span><span>2</span><span>3</span>
+                    </div>
+
+                    <div class="container-buttonChange">
+                        <button id="btnTheme">
+                            <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="60" cy="60" r="50" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-mini answer">
+            <div class="col-12" id="screen-answer">
+                0
+            </div>
+        </div>
+
+        <div class="container-mini keyPad">
+
+            <div class="col-3">
+                <button class="btnOperate" value="7">7</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="8">8</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="9">9</button>
+            </div>
+            <div class="col-3">
+                <button class="clear" id="del" >DEL</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="4" >4</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="5">5</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="6">6</button>
+            </div>
+            <div class="col-3">
+                <button class="btnTypeOperation" value="+">+</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="1">1</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="2">2</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="3">3</button>
+            </div>
+            <div class="col-3">
+                <button class="btnTypeOperation" value="-">-</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value=".">.</button>
+            </div>
+            <div class="col-3">
+                <button class="btnOperate" value="0">0</button>
+            </div>
+            <div class="col-3">
+                <button class="btnTypeOperation" value="/">/</button>
+            </div>
+            <div class="col-3">
+                <button class="btnTypeOperation" value="*">x</button>
+            </div>
+
+            <div class="col-6">
+                <button class="clear" id="reset">
+                    RESET
+                </button>
+            </div>
+            <div class="col-6">
+                <button class="calculate" id="calculate">
+                    =
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Script Change Theme -->
+
+    <script src="./scripts/changeTheme.js"></script>
+
+    <!-- Script App operations -->
+
+    <script src="./scripts/app.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+/* Theme 1 */
+
+.initial-mode {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.initial-mode #title {
+    color: hsl(0, 0%, 100%);
+
+}
+
+.initial-mode .containerTheme,
+.initial-mode .container-options span {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.85rem;
+}
+
+.initial-mode #btnTheme {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.initial-mode #btnTheme svg {
+    fill: hsl(6, 63%, 50%);
+}
+
+.initial-mode .answer {
+    background-color: hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.initial-mode .keyPad {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.initial-mode .keyPad .col-3 button {
+    box-shadow: #b3a497 0px -4px 0px inset;
+}
+
+.initial-mode .clear {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(224, 28%, 35%) 0px -4px 0px inset !important;
+}
+
+.initial-mode .calculate {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(6, 70%, 34%) 0px -4px 0px inset;
+}

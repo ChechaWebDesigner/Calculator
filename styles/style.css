@@ -1,0 +1,135 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    transition: all 0.25s;
+}
+
+/* General */
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 30%;
+    min-width: 300px;
+}
+
+.container-mini {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 15px;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 9;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+/* Option theme */
+
+#title {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container-flex {
+    display: flex;
+    align-items: flex-end;
+}
+
+.containerTheme {
+    width: 50%;
+    text-align: right;
+    margin-right: 0.5rem;
+}
+
+.containerBtn {
+    width: 50%;
+    text-align: center;
+}
+
+.container-options {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerBtn span {
+    min-width: 25px;
+}
+
+#btnTheme {
+    width: 80%;
+    min-width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.15rem 0.25rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#btnTheme svg {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+/* Answer */
+
+.answer {
+    padding: 2rem 1rem;
+    font-size: 3rem;
+    text-align: right;
+}
+
+/* KeyPad */
+
+.keyPad {
+    padding: 2rem 1rem;
+}
+
+.keyPad div button {
+    width: 100%;
+    padding: 0.75rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.keyPad div button:hover {
+    cursor: pointer;
+    border: 1px solid #111
+}
