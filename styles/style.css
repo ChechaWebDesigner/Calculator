@@ -111,6 +111,7 @@ main {
     padding: 2rem 1rem;
     font-size: 3rem;
     text-align: right;
+    overflow: auto;
 }
 
 /* KeyPad */
