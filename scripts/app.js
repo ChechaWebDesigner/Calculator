@@ -27,6 +27,10 @@ buttons.forEach((elem) => {
       printScreen.print(elem.value);
     }
   });
+  
+  elem.addEventListener("keypress", (e) => {
+    e.preventDefault();
+  });
 });
 
 operates.forEach((elem) => {
@@ -43,6 +47,10 @@ operates.forEach((elem) => {
       }
     }
   });
+  
+  elem.addEventListener("keypress", (e) => {
+    e.preventDefault();
+  });
 });
 
 reset.addEventListener("click", () => {
@@ -50,9 +58,17 @@ reset.addEventListener("click", () => {
   initial = false;
 });
 
+reset.addEventListener("keypress", e => {
+  e.preventDefault();
+});
+
 del.addEventListener("click", () => {
   initialDef = clear.def();
   initial = !initialDef;
+});
+
+del.addEventListener("keypress", e => {
+  e.preventDefault();
 });
 
 calculate.addEventListener("click", () => {
