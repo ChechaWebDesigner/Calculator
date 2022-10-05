@@ -20,9 +20,7 @@ export class Print {
     const validation = elementos[elementos.length - 1];
     if (
       validation === "+" ||
-      validation === "-" ||
-      validation === "*" ||
-      validation === "/"
+      validation === "-"
     ) {
       return false;
     } else {
